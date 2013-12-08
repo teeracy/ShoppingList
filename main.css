@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end CSS reset                                          */
+
+/* start of my code                                       */
+body {
+	background-image: url('background.JPG');
+	font-family: 'Amatic SC', cursive;
+	height: 100%;
+	position: absolute;
+	left: 8%;
+	right: 8%;
+	bottom: 0px;
+}
+
+#container {
+	min-width: 550px;
+	max-width: 960px;
+	height: 100%;
+	background-color: white;
+	opacity:0.87;
+	margin: 0px auto;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 85px;
+    margin: 15px;
+    font-family: 'Fredericka the Great', cursive;
+    margin-bottom: 35px;
+}
+
+ul {
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	margin: 25px;
+}
+
+input {
+	display: block;
+	width: 80%;
+	min-width: 450px;
+	max-width: 550px;
+	margin: 10px auto;
+	border: 1px solid #C8C8C8;
+	font-size: 22px;
+	font-family: inherit;
+	letter-spacing: 1px;
+}
+
+form > div {
+	width: 330px;
+	margin: 10px auto;
+}
+
+.button{
+	display:inline-block;
+    height: 30px;
+	width: 100px;
+	font-size: 25px;
+	background-color: #55544C;
+	color: #444444;
+	color: white;
+	border-radius: 3px;
+	text-align:center;
+	opacity: 1.0;
+	margin: 10px 3px;
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: 25px;
+}
+
+ol li {
+	margin: 15px;
+}
+
+.item {
+	margin: 9px 15px;
+	font-size: 30px;
+	position: relative;
+	letter-spacing: 1px;
+}
+
+/* code from when I wanted to insert a check mark, didn't look good
+/*.item div {
+	display: inline-block;
+	background: url('check.jpg');
+	height: 27px;
+	width: 24px;
+	position: absolute;
+
+}*/
+
+.checked {
+	text-decoration: line-through;
+}
