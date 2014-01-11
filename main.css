@@ -62,20 +62,18 @@ body {
 #container {
 	min-width: 550px;
 	max-width: 960px;
-	height: 100%;
-	background-color: white;
-	opacity:0.87;
+	min-height: 100%;
+	background-color: rgba(255,255,255,0.9);
 	margin: 0px auto;
-	padding: 15px;
-	border-radius: 3px;
+	padding: 0px 20px;
 }
 
 h1 {
     text-align: center;
     font-size: 85px;
-    margin: 15px;
+    padding: 25px;
     font-family: 'Fredericka the Great', cursive;
-    margin-bottom: 35px;
+    padding-left-bottom: 35px;
 }
 
 ul {
@@ -83,6 +81,13 @@ ul {
 	text-align: center;
 	font-size: 25px;
 	margin: 25px;
+}
+
+h4 {
+	font-weight: 700;
+	margin: 15px;
+	font-size: 30px;
+	text-align: center;
 }
 
 input {
@@ -131,16 +136,6 @@ ol li {
 	position: relative;
 	letter-spacing: 1px;
 }
-
-/* code from when I wanted to insert a check mark, didn't look good
-/*.item div {
-	display: inline-block;
-	background: url('check.jpg');
-	height: 27px;
-	width: 24px;
-	position: absolute;
-
-}*/
 
 .checked {
 	text-decoration: line-through;
