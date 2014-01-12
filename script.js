@@ -1,19 +1,23 @@
 $(document).ready(function() {
-    $('#add').click(function() {
+    var addItem = function() {
         var toAdd = $('input[name=checkListItem]').val();
+        if(toAdd.length != 0){
         $('.list').append('<li class="item">' + toAdd + '</li>');
         $('.item').sortable();
         status();
         $('input').val("");
+        }
+        else {
+            alert("Blanks are not valid entries!")
+        }
+    };
+    $('#add').click(function() {
+        addItem();
     });
-    $('input').keydown(function(e) {
+    $('input').keypress(function(e) {
         if (e.keyCode == '13') {
             e.preventDefault();
-           var toAdd = $('input[name=checkListItem]').val();
-            $('.list').append('<li class="item">' + toAdd + '</li>');
-            $('.item').sortable();
-            status();
-            $('input').val(""); 
+           addItem();
         }
     });
     $('#clearAll').mousedown(function() {
